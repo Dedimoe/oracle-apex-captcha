@@ -48,7 +48,7 @@ begin
 end;
 ```
 
-4. Open plsql, and connect as Sys DBA (user SYS), and then grant permission to user **schema** (example in my case is scott schema) :
+4. Open sqlplus, and connect as Sys DBA (user SYS), and then grant permission to user **schema** (example in my case is scott schema) :
 ```
 sqlplus /nolog
 conn /as sysdba
@@ -57,3 +57,6 @@ exit;
 ```
 
 5. Done
+
+Note:
+for apex 19.2 uses APEX_190200, 19.1 APEX_190100, 18.1 APEX_180100, 18.0 APEX_180000, 5.1 APEX_050100, 5.0 APEX_050000.
