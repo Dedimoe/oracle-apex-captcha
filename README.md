@@ -21,8 +21,7 @@ On page 9999 or 101
 ```
 declare
   --Copyright (C) 2019 Dedi Mulyadi <dedi@dr.com>
-  --Harus [conn /as sysdba]: grant select on APEX_190200.wwv_flow_request_verifications to <SCHEMA>;
-  --                         grant select on APEX_190200.wwv_flow_request_verifications to blockchain_wks;
+  --Must [conn /as sysdba]: grant select on APEX_190200.wwv_flow_request_verifications to <SCHEMA>;
   vAda varchar2(1):='N';
 begin
   if trim (:P9999_DCAPTCHA) is null then
