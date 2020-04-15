@@ -24,7 +24,7 @@ declare
   --Must [conn /as sysdba]: grant select on APEX_190200.wwv_flow_request_verifications to <SCHEMA>;
   vAda varchar2(1):='N';
 begin
-  if trim (:P9999_DCAPTCHA) is null then
+  if length(:P9999_DCAPTCHA) <3 then
     raise_application_error(-20001, 
     'Silahkan konfirmasi kode DCaptcha.');
   end if;
